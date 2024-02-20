@@ -1,0 +1,26 @@
+h1 {
+    font-family: 'Garamond', serif;
+    text-align: center;
+}
+body {
+    font-family: 'Calibri Light', sans-serif;
+
+}
+
+header {
+    text-align: center;
+    align-content: center;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+img {
+    width: 200px;
+    
+}
