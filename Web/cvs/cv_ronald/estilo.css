@@ -1,0 +1,59 @@
+.cv{
+    max-width: 90%;
+    text-align: right;
+    margin: auto;
+}
+
+
+.datos{
+    max-width: 90%;
+    text-align: left;
+    margin: auto;
+}
+
+
+.borde{
+    border-bottom: solid 13px;
+    color: rgb(120, 0, 0);
+}
+
+
+.borde2{
+    border-bottom: solid 3px;
+    color: red;
+}
+
+footer{
+    color: blueviolet;
+    background-color: red;
+}
+button{
+    border: 0;
+    background-image: linear-gradient(
+    150deg,
+    #ff0000,
+    #09f,
+    #ff0000
+    );
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+    transition: .3s;
+}
+button span{
+        background-color: #111;
+        padding: 16px 24px;
+        border-radius: 6px;
+        transition: .3s;
+    }
+ 
+button:hover span{
+        background: none;
+    }
+ 
+button:active{
+        transform: scale(0.9);
+    }
