@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO DE CONTACTO</title>
+    <link rel="stylesheet" href="EstiloFormulario.css">
+</head>
+<body>
+    
+
+    <form action="https://formsubmit.co/ronald47.maurice@gmail.com" method="POST" autocomplete="off">
+        <h2>Contacto</h2>
+        <div class="form-txt">
+            <a href="#">Política de privacidad</a>
+            <a href="#">Términos y condiciones</a>
+        </div>
+        
+        <div class="input-group">
+            <input type="text" name="name" placeholder="Nombre">
+            <input type="tel" name="phone" placeholder="Teléfono">
+            <input type="email" name="email" placeholder="Email">
+
+            <textarea name="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
+
+            <input class="btn" type="submit" value="Enviar">
+
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/Web/cvs/cv_ronald/formulario/formulario.html">
+
+            <input type="hidden" name="_captcha" value="false">
+        </div>
+    </form>
+
+    <script src="scriptFormulario.js"></script>
+
+</body>
+</html>
