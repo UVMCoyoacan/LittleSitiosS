@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="EstiloFormulario.css"/>
+    <script src="scriptFormulario.js"></script>
+    <title>Formulario de Contacto</title>
+</head>
+<body>
+    <h2>FORMULARIO DE CONTACTO</h2>
+    
+    <form name="contacto">
+        <div>
+            <label for="nombre">NOMBRE</label><input type="text" id="nombre" required>
+            <label for="apellido">APELLIDO:</label><input type="text" id="apellido" required>
+        </div>
+        <div>
+            <label for="mailCel">EMAIL o CELULAR:</label><input type="text" id="mailCel" required>
+        </div>
+        <div>
+            <label for="asunto">ASUNTO:</label>
+            <select id="asunto">
+                <option value="Elige una Opción">Elige una Opción</option>
+                <option value="Contratacion">Contratacion</option>
+                <option value="Consultoria">Consultoria</option>
+                <option value="Informacion Adicional">Informacion Adicional</option>
+                <option value="Otros">Otros</option>
+            </select><br>
+
+            <label for="mensaje">MENSAJE:</label><textarea id="mensaje" rows="5" required></textarea>
+        </div>
+        
+        <div>
+            <button type="button" onclick="enviarContacto()">Enviar</button>
+        </div>
+        
+    </div>
+
+     </form>  
+</body>
+</html>

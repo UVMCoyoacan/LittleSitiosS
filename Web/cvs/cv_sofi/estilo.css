@@ -1,44 +1,95 @@
-h1 {
-    font-family: 'Garamond', serif;
-    text-align: center;
-}
-body {
-    font-family: 'Calibri Light', sans-serif;
-
-}
-
 header {
     text-align: center;
     align-content: center;
+    background-color: rgb(109, 157, 109);
+    color: white;
 }
 
-h1, h3 {
+h1 {
+    font-family: 'Garamond', serif;
     text-align: center;
+    font-weight: 300; 
+    font-size: 55px;    
 }
 
-p {
-    margin-bottom: 15px;
+
+#imagen {
+    width: 250px;
+    height: 245px;
+    border-radius: 50%; 
+    overflow: hidden;
+    border: 5px solid white;
 }
 
-img {
-    width: 200px;
-    
+#contacto {
+    font-family: 'Calibri Light', sans-serif;
+    font-size: smaller;
 }
+
+
+#content {
+    font-family: 'Calibri Light', sans-serif;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 630px;
+    padding: 20px;
+}
+
+#ocup {
+    font-family: 'Calibri Light', sans-serif;
+}
+
+
+h3 {
+    font-family: 'Garamond', serif;
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3::before,
+h3::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 80%;
+    height: 2px;
+    background-color: rgb(109, 157, 109);
+}
+
+h3::before {
+    right: 75%;
+}
+
+h3::after {
+    left: 75%;
+}
+
+footer {
+    text-align: center;
+    align-content: center;
+    background-color: rgb(109, 157, 109);
+    height: 150px;
+    align-items: center;
+    justify-items: center;
+}
+
 button{
     border: 0;
-    background-image: linear-gradient(
-    150deg,
-    #9500ff,
-    #09f,
-    #00DDFF
-    );
-    border-radius: 8px;
-    color: white;
-    display: flex;
+    background-image: linear-gradient(150deg, #acd2b9, rgb(109, 157, 109), #a0cab1);
+    border-radius: 50%; /* Set border-radius to 50% for a circular shape */
+    color: black;
     font-size: 18px;
     padding: 4px;
     cursor: pointer;
     transition: .3s;
+    display: block;
+    margin: auto;
+    width: 100px; 
+    height: 100px; 
+    overflow: hidden; 
+    border: 5px solid white;
+    text-decoration: none;
 }
 button span{
         background-color: #111;
