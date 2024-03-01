@@ -3,7 +3,7 @@ document.getElementById('showFormBtn').addEventListener('click', function() {
   formContainer.innerHTML = '';
 
   var form = document.createElement('form');
-  form.action = 'display.html';
+  form.action = './formulario/display.html';
   form.method = 'GET';
 
   var nameField = document.createElement('input');
