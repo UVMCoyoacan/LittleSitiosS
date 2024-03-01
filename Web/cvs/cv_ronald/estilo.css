@@ -38,8 +38,8 @@ button{
     border-radius: 8px;
     color: white;
     display: flex;
-    font-size: 18px;
-    padding: 4px;
+    font-size: 30px;
+    padding: 10px;
     cursor: pointer;
     transition: .3s;
 }
