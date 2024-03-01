@@ -8,7 +8,6 @@ function enviarMensaje() {
                            <p>"${mensaje}"</p>
                            <p>Te contactaremos a <strong>${correo}</strong> pronto.</p>`;
   
-    // Limpia los campos manualmente sin usar .reset()
     document.getElementById('nombre').value = '';
     document.getElementById('correo').value = '';
     document.getElementById('mensaje').value = '';
