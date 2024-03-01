@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="estiloFormulario.css">
+    <script type="text/javascript">
+        function getUrlVars() {
+            var vars = {};
+            window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, 
+            function(m,key,value) {
+                vars[key] = decodeURIComponent(value).replace(/\+/g, ' ');
+            });
+            return vars;
+        }
+
+        var nombre = getUrlVars()["nombre"];
+        var correo = getUrlVars()["correo"];
+        var mensaje = getUrlVars()["mensaje"];
+    </script>         
+</head>
+<body>
+
+<h2>Datos Recibidos del Formulario</h2>
+
+<h3>Información del Contacto</h3>
+<p>Nombre: <span id="Nombre"></span></p>
+<p>Correo: <span id="Correo"></span></p>
+<p>Mensaje: <span id="Mensaje"></span></p>
+
+<script>
+    document.getElementById("Nombre").innerHTML = nombre;
+    document.getElementById("Correo").innerHTML = correo;
+    document.getElementById("Mensaje").innerHTML = mensaje;
+</script>
+
+</body>
+</html>

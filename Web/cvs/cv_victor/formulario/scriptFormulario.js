@@ -1,15 +1,32 @@
-function enviarMensaje() {
-    var nombre = document.getElementById('nombre').value;
-    var correo = document.getElementById('correo').value;
-    var mensaje = document.getElementById('mensaje').value;
-  
-    var resultado = document.getElementById('resultado');
-    resultado.innerHTML = `<p>Gracias, <strong>${nombre}</strong>, por tu mensaje:</p>
-                           <p>"${mensaje}"</p>
-                           <p>Te contactaremos a <strong>${correo}</strong> pronto.</p>`;
-  
-    document.getElementById('nombre').value = '';
-    document.getElementById('correo').value = '';
-    document.getElementById('mensaje').value = '';
-  }
-  
+document.getElementById('showFormBtn').addEventListener('click', function() {
+  var formContainer = document.getElementById('formContainer');
+  formContainer.innerHTML = '';
+
+  var form = document.createElement('form');
+  form.action = 'display.html';
+  form.method = 'GET';
+
+  var nameField = document.createElement('input');
+  nameField.type = 'text';
+  nameField.name = 'nombre';
+  nameField.placeholder = 'Nombre';
+  form.appendChild(nameField);
+
+  var emailField = document.createElement('input');
+  emailField.type = 'email';
+  emailField.name = 'correo';
+  emailField.placeholder = 'Correo';
+  form.appendChild(emailField);
+
+  var messageField = document.createElement('textarea');
+  messageField.name = 'mensaje';
+  messageField.placeholder = 'Mensaje';
+  form.appendChild(messageField);
+
+  var submitBtn = document.createElement('input');
+  submitBtn.type = 'submit';
+  submitBtn.value = 'Enviar';
+  form.appendChild(submitBtn);
+
+  formContainer.appendChild(form);
+});
